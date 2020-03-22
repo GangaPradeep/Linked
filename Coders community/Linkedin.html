@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Linked In</title>
+        <meta charset="utf-8">
+        <link rel='stylesheet' href="Linkedin(css).css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <style>
+          /* not active */
+        .nav-pills .pill-1 .nav-link:not(.active) {
+            background-color: #f7f9fa;
+            color: black;
+            width:100px;
+        }
+        
+        .nav-pills .pill-2 .nav-link:not(.active) {
+            background-color: #f7f9fa;
+            color: black;
+            width: 100px;
+        }
+        
+        
+        
+        /* active (faded) */
+        .nav-pills .pill-1 .nav-link {
+          background-color: #f7f9fa;
+          color: #3f85cf;
+          width:100px;
+          border-radius: 10px;
+          border:none;
+          margin-top: 5%;
+          margin-left: 5%;
+          margin-right: 5%;
+          box-shadow: 3px 3px 3px 1px rgba(63, 63, 63, 0.137);
+          text-align: left;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+        }
+        .nav-pills .pill-1 .nav-link:hover
+        {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        .nav-pills .pill-2 .nav-link {
+            background-color: #f7f9fa;
+            color: #3f85cf;
+            width:100px;
+            border-radius: 10px;
+            border:none;
+            margin-top: 5%;
+            margin-left: 11%;
+            margin-right: 5%;
+            box-shadow: 3px 3px 3px 1px rgba(63, 63, 63, 0.137);
+            text-align: left;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        .nav-pills .pill-2 .nav-link:hover
+        {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }        
+        
+          </style>
+    </head>
+    <body>
+      
+        <nav class="navbar navbar-light bg-light justify-content-between">
+           <div class = "tit">
+            <a class="navbar-brand" href="#">
+                <div class = "row">
+                 <div class = "some">Linked</div>
+                 <img src="icon.png" style="width:70px;height:70px;">
+                </div>
+             </a>
+           </div>
+           <div class = "buttons">
+            <form class="form-inline">
+           
+                <form class="form-inline my-2 my-lg-0">
+                    <div class = "log">
+                      <button  class="btn btn-light mr-sm-2" id ="but5" type="submit">Join Now</button>
+                    </div>
+                  <button class="btn btn-outline-primary" id ="but4" type="submit">Signin</button>
+                </form>                   
+  </form>
+           </div>
+          </nav>
+          <br>
+          <br>
+          <br>
+     <div class="rows">
+         <div class = "column">
+           <div class = "row">
+            <div class = "column">
+              <h1 class ="intro">
+                Welcome to your personal community
+            </h1>
+            </div>
+            <div class ="column">
+              <div class = "im1">
+                <img src = "working1.jpg" class = "im">
+              </div>
+            </div>
+           </div>           
+             <br>
+             <br>          
+             <div class = "ser">
+                    <button class="btn btn-outline-secondary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" id = "inputs" type="submit">
+                      <img src="search2.jpg" style="width: 25px;height:25px;margin-left: 0%;">
+                      Find jobs,people and more</button>
+                      <div class = "cola">
+                        <div class="collapse" id="collapseExample">
+                         
+                            <div class = "card">
+                              <ul class="nav nav-pills">
+                                <li class="nav-item pill-1">
+                                    <a class="nav-link active" data-toggle="tab" href="#tab1">Jobs</a>
+                                </li>
+                                <li class="nav-item pill-2">
+                                    <a class="nav-link" data-toggle="tab" href="#tab2">People</a>
+                                </li> 
+                            </ul>
+                            <div class="tab-content mt-3">
+                                <div class="tab-pane fade show active" id="tab1" role="tabpanel" >
+                                  <div class = "sort">
+                                    <div class = "in1">
+                                     <input class="btn btn-outline-secondary" type="text" class="form-control" placeholder="Search for job titles or companies" id = "inputed" >
+                                    </div>
+                                     <input class="btn btn-outline-secondary" type="text" class="form-control" placeholder="Enter your location" id = "inputed" >
+                                     <br>
+                                     <button type="button" class="btn btn-primary" id = "but3">Search Jobs</button> 
+                                   </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab2" role="tabpanel">
+                                  <div class = "sort">
+                                    <div class = "in1">
+                                     <input class="btn btn-outline-secondary" type="text" class="form-control" placeholder="First Name" id = "inputed" >
+                                    </div>
+                                     <input class="btn btn-outline-secondary" type="text" class="form-control" placeholder="Last Name" id = "inputed" >
+                                     <br>
+                                     <button type="button" class="btn btn-primary" id = "but3">Search People</button> 
+                                   </div>
+                                </div>
+                            </div> 
+                          </div>
+                          </div>                       
+                         </div>
+                        </div>
+                       </div>                   
+                       </div>             
+                       <br><br><br>
+                      </div>
+                     </div>
+                     <div class = "row">
+                      <div class = column>
+                     <h1 class = "intern">
+                       Find the right job or internship for you
+                     </h1>
+                     </div>
+                     
+                       <div class = "column">
+                         <div class = "sug">
+                           SUGGESTED SEARCHES
+                          <div class = "row">
+                           <button class= "but1">&nbsp &nbsp Engineering &nbsp &nbsp</button> 
+                           <button class= "but1">&nbsp &nbsp Business Development &nbsp &nbsp </button>
+                           <button class= "but1">&nbsp &nbsp Finance &nbsp &nbsp </button>
+                          </div> 
+                          <div class = "row">
+                           <button class= "but1">&nbsp &nbsp Administrative Assistant &nbsp &nbsp</button> 
+                           <button class= "but1">&nbsp &nbspRetail Associate &nbsp &nbsp </button>
+                          </div>
+                          <div class = "row">
+                           <button class= "but1">&nbsp &nbsp Customer Service &nbsp &nbsp</button> 
+                           <button class= "but1">&nbsp &nbsp Operations &nbsp &nbsp </button>
+                           <button class= "but1">&nbsp &nbsp Information Technology &nbsp &nbsp </button>
+                          </div>  
+                          <div class = "comd">
+                           <button class="btn btn-outline-light" data-toggle="collapse" data-target="#collapseExample1" id="but1" aria-expanded="false" aria-controls="collapseExample" type="submit">
+                             Show More
+                           </button>
+                             <div class = "cole">
+                               <div class="collapse" id="collapseExample1">
+                                 <div class = "row">
+                                   <button class= "but1">&nbsp &nbspMarketing&nbsp &nbsp</button> 
+                                   <button class= "but1">&nbsp &nbsp Human Resources &nbsp &nbsp </button>
+                                  </div>  
+                               </div>
+                               </div>
+                           </div>
+                         </div>
+                     </div>
+                  </div>  
+     <div class = "vi">
+      <div class = "row">
+        <div class = "column">
+            <iframe width="520" height="415 " class ="ifr"
+               src="https://www.youtube.com/embed//IlYUUN8rL_Y">
+            </iframe>
+        </div>
+        <div class = "column">
+         <div class = "container2">
+          <h1 class = "vit">
+            In it to chase my dream
+          </h1>
+         <h1 class = "vit1">
+            Check out Gayatri's story of finding a new job on LinkedIn
+          </h1>
+          </div>
+        </div>
+        </div>
+       </div>
+      
+       <!-- <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>   -->
+    <div class = "do">
+      <hr class="solid">
+  
+    </div>
+  
+   <div  class = "foot">
+     <div class = "c">
+       sdvfv
+     </div>
+    <div class = "join">
+      Join your colleagues, classmates, and friends on LinkedIn.
+     </div>
+     <button class="btn btn-outline-primary" id ="but3" style="margin-left: 10%; width:130px;height: 200; font-size: 20px; background-color: #3f85cf;" type="submit">Get started</button>
+    <br><br><br><br><br>
+    </div>
+    <div style="margin-top: 3%;">
+     <!-- &nbsp   &nbsp   &nbsp   &nbsp   &nbsp   &nbsp   &nbsp   -->
+       <div class = "row">
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+        <div class = column>
+          <a class="navbar-brand" href="#">
+             <div class = "somes">Linked
+              <img src="icon.png" style="width:33px;height:33px;">
+             </div>
+         </a>
+       </div>
+         <div class = "column">
+           <div class = "sug"  style="margin-left: 150%;">
+           <h2 style = "font-size: 16px;"> General</h2> 
+           <div class = "column">
+            <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">Sign Up</a> <br>
+            <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">HelpCenter</a><br>
+            <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">About</a> <br>
+            <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">Press</a> <br> 
+            <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">Blog</a> <br>
+            <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">Career</a>  <br>
+            <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">Developers</a> <br><br>
+           </div>
+         </div>
+       </div>
+         <div class = "column">
+         <div class = "sug"  style="margin-left: 190%;">
+         <h2 style = "font-size: 16px;">Browse&nbspLinkedIn</h2> 
+         <div class = "column">
+          <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">Learning</a> <br>
+          <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">Jobs</a><br>
+          <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">Salary</a> <br>
+          <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">Mobile</a> <br> 
+          <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">ProFinder</a> <br>
+         </div>
+       </div>
+     </div>
+          <div class = "column">
+       <div class = "sug"  style="margin-left: 245%;">
+       <h2 style = "font-size: 15px;">Business&nbspSolutions</h2> 
+       <div class = "column">
+        <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">Talent</a> <br>
+        <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">Marketing</a><br>
+        <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">Sales</a> <br>
+        <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">Learning</a> <br> 
+       </div>
+     </div>
+   </div>
+      <div class = "column">
+     <div class = "sug" style="margin-left: 475%;">
+     <h2 style = "font-size: 16px;">Directories</h2> 
+     <div class = "column">
+      <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">Members</a> <br>
+      <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">Jobs</a><br>
+      <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">Companies</a> <br>
+      <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">Salaries</a> <br> 
+      <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">Universities</a> <br>
+      <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">Featured</a>  <br>
+      <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">Learning</a> <br>
+      <a style="font-weight: 500; color: #3d3d3d;font-size: 14px;" href="#">Posts</a> <br>
+     </div>
+   </div>
+ </div>
+    </div>
+  </div>
+    </body>
+    <div class = "do">
+      <hr class="solid">
+  
+    </div>
+  <footer>
+      <div class ="row" style="font-size: 12px;">
+        &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp 
+        <div class = "foo" style="font-size: 15px; font-weight: 700;font-family: 'Rubik', sans-serif;">
+          LinkedIn
+          <img src="linkedin.png" style="width: 30px;height: 30px">
+        </div>
+        &nbsp  &nbsp  &nbsp
+        <p>© 2020</p>
+        &nbsp  &nbsp  &nbsp
+        <a>About</a>
+        &nbsp  &nbsp  &nbsp
+        <a>User Agreement</a>
+        &nbsp  &nbsp  &nbsp
+        <a>Privacy Policy</a>
+        &nbsp  &nbsp  &nbsp
+        <a>Cookie Policy</a>
+        &nbsp  &nbsp  &nbsp
+        <a>Copyright Policy</a>
+        &nbsp  &nbsp  &nbsp
+        <a>Brand Policy</a>
+        &nbsp  &nbsp  &nbsp
+        <a>Guest Controls</a>
+        &nbsp  &nbsp  &nbsp
+        <a>Community Guidelines</a>
+        &nbsp  &nbsp  &nbsp
+        <a>Languages</a>
+      </div>
+  </footer>
+   
+</html>
